@@ -30,4 +30,9 @@
 ```
 
 **Output:**
+
 ![Pengenalan_Javascript](img/pengenalan.png)
+
+Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element. Untuk melihatnya klik kanan, pilih inspect lalu buka pada bagian console.
+
+![console](img/console.png)
