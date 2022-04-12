@@ -346,12 +346,40 @@ Dengan hasil sebagi berikut:
 **Coding:**
 
 ```html
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        function ubahWarnaLB(warna) {
+            document.bgColor = warna;
+        }
+        function ubahWarnaLD(warna) {
+            document.fgColor = warna;
+        }
+    </script>
+    <h1>Tes</h1>
+    <form action="">
+        <input type="button" value="Latar Belakang Biru" onclick="ubahWarnaLB('BLUE')">
+        <input type="button" value="Latar Belakang Putih" onclick="ubahWarnaLB('WHITE')">
+        <input type="button" value="Teks Hitam" onclick="ubahWarnaLD('BLACK')">
+        <input type="button" value="Teks Hijau" onclick="ubahWarnaLD('GREEn')">
+    </form>
+    <script lang="javascript">
+        document.write("Dimodifikasi terakhir pada " + document.lastModified);
+    </script>
+</body>
+</html>
 ```
 
 
 **Output:**
-
+![Form_Button](img/Formbutton.png)
 
 
 # HTML DOM
