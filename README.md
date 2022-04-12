@@ -242,3 +242,60 @@ Karena nilai yang dimasukkan adalah "55" dengan minimal nilai untuk lulus adalah
 ![Hasil](img/if-else2.png)
 
 
+
+## 8). Penggunaan Operator Switch untuk Seleksi Kondisi
+
+
+**Coding:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan Operator Switch</title>
+    <script lang="javascript">
+        function test ()
+        {
+            val1=window.prompt("Input Nilai (1-5):")
+            switch (val1)
+            {
+                case "1":
+                    document.write("Bilangan Satu")
+                    break
+                case "2":
+                    document.write("Bilangan Dua")
+                    break
+                case "3":
+                    document.write("Bilangan Tiga")
+                    break
+                case "4":
+                    document.write("Bilangan Empat")
+                    break
+                case "5":
+                    document.write("Bilangan Lima")
+                    break
+                default :
+                    document.write("Bilangan Lainnya")
+            }
+        }
+
+    </script>
+    
+</head>
+<body>
+    <input type="button" name="button1" value="switch" onclick=test()>
+</body>
+</html>
+```
+
+**Output:**
+
+![Operator_Switch](img/operator-switch1.png)
+
+
+Dengan hasil sebagi berikut:
+
+![Operator_Switch](img/operator-switch2.png)
