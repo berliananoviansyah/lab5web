@@ -534,3 +534,7 @@ body {
   **Dengan Hasil Output adalah:**
 
   ![Membuat_data_validasi](img/datavalid.png)
+
+  Jika anda tidak memasukkan alamat, maka akan muncul pesan sebagai berikut :
+
+  ![membuat_data_valid](img/datavalid2.png)
