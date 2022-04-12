@@ -37,6 +37,8 @@ Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element.
 
 ![console](img/console.png)
 
+
+
 # Javascript Dasar
 ## 2). Pemakaian Alert Sebagai Property Window
 
@@ -63,3 +65,32 @@ Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element.
 
 **Output:**
 ![Property_Window](img/propertywdw.png)
+
+
+## 3). Pemakaian Method Dalam Obyek
+
+**Coding:**
+
+```html
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Javascript</title>
+</head>
+<body>
+    Percobaan Menggunakan Javascript:<br>
+    <script lang="javascript">
+        document.write("Belajar Menggunakan Javascript<br>");
+        document.write("Good Luck!^^");
+    </script>
+</body>
+</html>
+```
+
+**Output:**
+
+![Method_Obyek](img/method.png)
+
