@@ -339,3 +339,64 @@ Dengan hasil sebagi berikut:
 **Output:**
 
 ![Form_Input](img/forminput.png)
+
+
+## 10). Form Button
+
+**Coding:**
+
+```html
+
+```
+
+
+**Output:**
+
+
+
+# HTML DOM
+
+
+## 11). Pilihan Menggunakan Checkbox Dengan Perhitungan Otomatis
+
+**Coding:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu</title>
+    <script lang="javascript">
+        function hitung(ele) {
+            var total=document.getElementById('total').value;
+                total=(total?parseInt(total):0)
+            var harga=0;
+
+            if(ele.checked) {
+                harga=ele.value;
+                total+=parseInt(harga);
+            } else{
+                harga=ele.value;
+                if(total>0)
+                total-=parseInt(harga);
+            }
+            document.getElementById('total').value=total;
+        }
+    </script>
+</head>
+<body>
+    <h1>Daftra Menu Minuman</h1>
+    <label><input type="checkbox" value="5000"  name="menu1" id="menu1" onclick="hitung(this);"> Iced Tea Rp. 5.000</label><br>
+    <label><input type="checkbox" value="7000"  name="menu2" id="menu2" onclick="hitung(this);"> Choco Milk Rp. 7.000</label><br>
+    <label><input type="checkbox" value="4000"  name="menu3" id="menu3" onclick="hitung(this);"> Water Rp. 4.000</label><hr>
+    <strong>Total Bayar : Rp. <input type="text" name="total" id="total"></strong>
+</body>
+</html>
+```
+
+
+**Output:**
+
+![Perhitungan_Otomatis](img/checkboxperhitunganotomatis.png)
