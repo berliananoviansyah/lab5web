@@ -202,3 +202,43 @@ Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element.
 **Output:**
 
 ![Aritmatika](img/aritmatika.png)
+
+
+
+## 7). Seleksi Kondisi (IF/ELSE)
+
+**Coding:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaplikasian if-else</title>
+</head>
+<body>
+    <script lang="javascript">
+        var nilai = prompt("Nilai (0-100):", 0);
+        var hasil = "";
+        if (nilai >59)
+        hasil = "Lulus";
+        else
+        hasil = "Tidak Lulus";
+        document.write("hasil: "+hasil);
+    </script>
+</body>
+</html>
+```
+
+
+**Output:**
+
+![Seleksi_IfElse](img/if-else1.png)
+
+Karena nilai yang dimasukkan adalah "55" dengan minimal nilai untuk lulus adalah "59", maka hasilnya adalah "Tidak Lulus"
+
+![Hasil](img/if-else2.png)
+
+
