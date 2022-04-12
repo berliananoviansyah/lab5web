@@ -121,3 +121,32 @@ Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element.
 **Output:**
 ![Pengaplikasian_Prompt](img/prompt.png)
 
+
+## 5). Pembuatan Fungsi dan Cara pengaplikasiannya
+
+**Coding:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Program Javascript</title>
+    <script lang="javascript">
+        function pesan(){
+            alert ("Memanggil Javascript dengan Body Onload")
+        }
+    </script>
+</head>
+<body onload=pesan()>
+    
+   
+</body>
+</html>
+```
+
+**Outputnya:**
+![Fungsi_Onload](img/onload.png)
+
