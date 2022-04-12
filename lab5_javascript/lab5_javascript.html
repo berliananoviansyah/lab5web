@@ -4,37 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penggunaan Operator Switch</title>
+    <title>Form input</title>
     <script lang="javascript">
-        function test ()
-        {
-            val1=window.prompt("Input Nilai (1-5):")
-            switch (val1)
-            {
-                case "1":
-                    document.write("Bilangan Satu")
-                    break
-                case "2":
-                    document.write("Bilangan Dua")
-                    break
-                case "3":
-                    document.write("Bilangan Tiga")
-                    break
-                case "4":
-                    document.write("Bilangan Empat")
-                    break
-                case "5":
-                    document.write("Bilangan Lima")
-                    break
-                default :
-                    document.write("Bilangan Lainnya")
-            }
+        function test () {
+            var val1=document.kirim.T1.value
+            if (val1%2==0)
+                document.kirim.T2.value="bilangan genap"
+            else
+                document.kirim.T2.value="bilangan ganjil"
         }
-
     </script>
-    
 </head>
 <body>
-    <input type="button" name="button1" value="switch" onclick=test()>
+    <form action="" method="post" name="kirim">
+        <p>BIL <input type="text" name="T1" id="T1" size="20"> MERUPAKAN BIL <input type="text" name="T2" id="T2" size="20"></p>
+        <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+    </form>
 </body>
 </html>

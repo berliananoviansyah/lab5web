@@ -299,3 +299,43 @@ Karena nilai yang dimasukkan adalah "55" dengan minimal nilai untuk lulus adalah
 Dengan hasil sebagi berikut:
 
 ![Operator_Switch](img/operator-switch2.png)
+
+
+# Pembuatan Form
+
+
+## 9). Form Input
+
+**Coding:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form input</title>
+    <script lang="javascript">
+        function test () {
+            var val1=document.kirim.T1.value
+            if (val1%2==0)
+                document.kirim.T2.value="bilangan genap"
+            else
+                document.kirim.T2.value="bilangan ganjil"
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post" name="kirim">
+        <p>BIL <input type="text" name="T1" id="T1" size="20"> MERUPAKAN BIL <input type="text" name="T2" id="T2" size="20"></p>
+        <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+    </form>
+</body>
+</html>
+```
+
+
+**Output:**
+
+![Form_Input](img/forminput.png)
