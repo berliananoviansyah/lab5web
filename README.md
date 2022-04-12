@@ -428,3 +428,109 @@ Dengan hasil sebagi berikut:
 **Output:**
 
 ![Perhitungan_Otomatis](img/checkboxperhitunganotomatis.png)
+
+
+# Pertanyaan dan Tugas
+
+## 1). Buat script untuk melakukan validasi pada isian form!
+
+**Coding HTML:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validasi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function validasiForm() {
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            var alamat = document.getElementById("alamat").value;
+            if (nama != "" && email != "" && alamat != "") {
+                return true;
+            } else {
+                alert('Isi Alamat Anda dengan lengkap !');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+     <div class="login">
+        <h2>VALIDATION YOUR DATA</h2>
+        <form action="#" method="POST" onSubmit="return validasiForm()">
+            <div>
+                <label>Full Name:</label>
+                <input type="text" name="nama" id="nama" />
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div>
+                <label>Address:</label>
+                <textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="tombol">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+```
+
+
+**Coding CSS:**
+```css
+body {
+    background: teal;
+    font-family: sans-serif;
+    padding: 100px;
+  }
+  
+  h2{
+      text-align: center;
+      font-size: 35px;
+      color: gray;
+  }
+
+  .login {
+    padding: 1em;
+    margin: 2em auto;
+    width: 30em;
+    background: #fff;
+    border-radius: 3px;
+  }
+  
+  label {
+    font-size: 10pt;
+    color: #555;
+  } 
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
+    width: 95%;
+    background: #efefef;
+    border: 0;
+    font-size: 10pt;
+    margin: 6px 0px; 
+  }
+   
+  .tombol {
+    background: olivedrab;
+    color: #fff;
+    border: 0;
+    padding: 5px 8px;
+  } 
+   .tombol:hover{
+      background-color: #555;
+  }
+  ```
+
+
+  **Dengan Hasil Output adalah:**
+
+  ![Membuat_data_validasi](img/datavalid.png)

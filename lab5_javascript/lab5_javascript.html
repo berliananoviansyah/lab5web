@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objek Document</title>
+    <title>Form Validasi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function validasiForm() {
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            var alamat = document.getElementById("alamat").value;
+            if (nama != "" && email != "" && alamat != "") {
+                return true;
+            } else {
+                alert('Isi Alamat Anda dengan lengkap !');
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
-    <script lang="javascript">
-        function ubahWarnaLB(warna) {
-            document.bgColor = warna;
-        }
-        function ubahWarnaLD(warna) {
-            document.fgColor = warna;
-        }
-    </script>
-    <h1>Tes</h1>
-    <form action="">
-        <input type="button" value="Latar Belakang Biru" onclick="ubahWarnaLB('BLUE')">
-        <input type="button" value="Latar Belakang Putih" onclick="ubahWarnaLB('WHITE')">
-        <input type="button" value="Teks Hitam" onclick="ubahWarnaLD('BLACK')">
-        <input type="button" value="Teks Hijau" onclick="ubahWarnaLD('GREEn')">
-    </form>
-    <script lang="javascript">
-        document.write("Dimodifikasi terakhir pada " + document.lastModified);
-    </script>
+     <div class="login">
+        <h2>VALIDATION YOUR DATA</h2>
+        <form action="#" method="POST" onSubmit="return validasiForm()">
+            <div>
+                <label>Full Name:</label>
+                <input type="text" name="nama" id="nama" />
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div>
+                <label>Address:</label>
+                <textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="tombol">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
