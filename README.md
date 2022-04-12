@@ -5,6 +5,8 @@
 
 # Praktikum 5 Pertemuan 6
 
+
+
 ## 1). Persiapan Membuat Dokmen HTML dengn Nama File lab5_javascript.html.
 
 **Untuk coding dan outputnya adalah sebagai berikut:**
@@ -64,7 +66,9 @@ Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element.
 ```
 
 **Output:**
+
 ![Property_Window](img/propertywdw.png)
+
 
 
 ## 3). Pemakaian Method Dalam Obyek
@@ -95,6 +99,7 @@ Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element.
 ![Method_Obyek](img/method.png)
 
 
+
 ## 4). Pengaplikasian Prompt
 
 **Coding:**
@@ -119,7 +124,9 @@ Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element.
 ```
 
 **Output:**
+
 ![Pengaplikasian_Prompt](img/prompt.png)
+
 
 
 ## 5). Pembuatan Fungsi dan Cara pengaplikasiannya
@@ -148,5 +155,50 @@ Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element.
 ```
 
 **Outputnya:**
+
 ![Fungsi_Onload](img/onload.png)
 
+
+
+# Dasar Pemrograman pada Javascript
+
+
+## 6). Operasi Dasar Aritmatika
+
+
+**Coding:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Program Javascript</title>
+    <script lang="javascript">
+        function test (val1,val2)
+        {
+            document.write("<br>"+"perkalian : val1*val2 "+"<br>")
+            document.write(val1*val2)
+            document.write("<br>"+"pembagian : val1/val2 "+"<br>")
+            document.write(val1/val2)
+            document.write("<br>"+"penjumlahan : val1+val2 "+"<br>")
+            document.write(val1+val2)
+            document.write("<br>"+"pengurangan : val1-val2 "+"<br>")
+            document.write(val1-val2)
+            document.write("<br>"+"modulus : val1%val2 "+"<br>")
+            document.write(val1%val2)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" name="button1" value="arithmetic" onclick=test(4,7)>
+</body>
+</html>
+```
+
+
+**Output:**
+
+![Aritmatika](img/aritmatika.png)
