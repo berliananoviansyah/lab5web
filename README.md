@@ -94,3 +94,30 @@ Untuk console.log tidak ditampilakn pada browser karena bersifat hidden element.
 
 ![Method_Obyek](img/method.png)
 
+
+## 4). Pengaplikasian Prompt
+
+**Coding:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Javascript</title>
+</head>
+<body>
+    Percobaan Menggunakan Javascript:<br>
+    <script lang="javascript">
+       var nama = prompt("What is your name?","Enter your name here");
+       document.write("Hi, "+nama)
+    </script>
+</body>
+</html>
+```
+
+**Output:**
+![Pengaplikasian_Prompt](img/prompt.png)
+
